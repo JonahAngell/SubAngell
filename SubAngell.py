@@ -8,7 +8,7 @@ x = - 1
 for word in subtitle_track:
     x += 1
     if word in BANLIST:
-        subtrack = subtrack + BANLIST(word) + ' '
+        subtrack = subtrack + BANLIST[word] + ' '
     else:
         subtrack = subtrack + word
 

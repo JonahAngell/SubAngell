@@ -3,6 +3,5 @@ BANLIST = {"sentence":"phrase", "test":"practice"}
 
 subtitle_track = SUBTRACK.split()
 
-
-
-
+for word in subtitle_track:
+    

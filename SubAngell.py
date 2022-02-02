@@ -7,9 +7,9 @@ x = - 1
 
 for word in subtitle_track:
     x += 1
-    if BANLIST(word):
+    if BANLIST.has_key(word):
         subtrack = subtrack + BANLIST(word) + ' '
-    else
+    else:
         subtrack = subtrack + word
 
 print(subtrack)

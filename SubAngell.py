@@ -10,7 +10,8 @@ for line in subtitle_track:
     subtitle_track[x] = subtitle_track[x].split()
     for word in subtitle_track[x]:
         if word.lower() in BANLIST:
-            subtrack = subtrack + BANLIST[word] + ' '
+
+            subtrack = subtrack + BANLIST[word.lower()] + ' '
         else:
             subtrack = subtrack + word + ' '
     subtrack = subtrack + '\n' 
